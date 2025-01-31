@@ -131,3 +131,24 @@ document.querySelectorAll('.read-more-toggle').forEach(function (button) {
   parentElement.classList.remove('expanded');
   button.textContent = 'Read More';
 });
+
+
+$(document).ready(function() {
+  $(".accordion-item .accordion-content").not(':first').hide();
+  $(".accordion-item .accordion-header").first().find('.accordion-icon').attr('src', '../assets/images/svg/faq-minus.svg'); // Set minus icon for the first one
+
+
+  $(".accordion-header").click(function() {
+      $(".accordion-content").slideUp();
+      $(".accordion-icon").attr('src', '../assets/images/svg/faq-plus.svg');
+      var content = $(this).next(".accordion-content");
+      var icon = $(this).find('.accordion-icon');
+      if (content.is(":visible")) {
+          content.slideUp();
+          icon.attr('src', '../assets/images/svg/faq-plus.svg');
+      } else {
+          content.slideDown();
+          icon.attr('src', '../assets/images/svg/faq-minus.svg');
+      }
+  });
+});

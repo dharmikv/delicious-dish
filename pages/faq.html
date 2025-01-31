@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Dish</title>
+    <link rel="stylesheet" href="../assets/css/dist/style.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header class="sticky top-0 header w-full">
+        <div class="top-bar">
+            <div class="container-fluid-xl">
+                <div class="flex justify-between max-large:justify-center items-center">
+                    <div class="top-bar-head charcoal">
+                        <span>Local food, global flavors.</span>
+                    </div>
+                    <div class="top-bar-links gap-[30px] hidden min-large:flex">
+                        <a href="mailto:info@deliciousdishtours.com">
+                            <div class="w-fit">
+                                <img src="../assets/images/svg/mail-icon.svg" alt="mail icon">
+                            </div>
+                            <span>info@deliciousdishtours.com</span>
+                        </a>
+                        <div class="w-[1px] bg-lightbrown"></div>
+                        <a href="tel:+1 310-734-8193">
+                            <div class="w-fit">
+                                <img src="../assets/images/svg/call-icon.svg" alt="call icon">
+                            </div>
+                            <span>+1 310-734-8193</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="border-b-[1px] border-lightgray">
+            <div class="container-fluid-xl max-4xl:px-50 max-xxl:px-40 max-xl:px-[35px] max-large:px-30 max-lg:px-20">
+                <div class="flex items-center justify-between py-30 max-lg:py-20 gap-[10px]">
+                    <div class="navbar-brand flex-1">
+                        <a href="#" class="max-md:max-w-[100px] max-sm:max-w-[80px] block">
+                            <img src="../assets/images/png/nav-logo-copy.png" alt="Delicious dish">
+                        </a>
+                    </div>
+                    <div class="flex-[2] flex justify-center items-center">
+                        <a href="#">
+                            <img src="../assets/images/png/Delicious Dish Tours.png"
+                                class="max-lg:max-w-[350px] max-sm:max-w-[250px] max-576:max-w-[180px]" alt="">
+                        </a>
+                    </div>
+                    <div class="items-center gap-[15px] min-xl:flex-row hidden min-lg:flex justify-end flex-1">
+                        <a href="#" class="cart flex items-center gap-[7px]">
+                            <div>
+                                <img src="../assets/images/svg/bag.svg" alt="cart icon">
+                            </div>
+                            <span class="charcoal max-xl:hidden">1 item</span>
+                        </a>
+                        <div class="btn-container">
+                            <a href="#" class="btn btn-small btn-pink">Book now</a>
+                        </div>
+                    </div>
+                    <div class="flex min-lg:hidden open-button justify-end flex-1">
+                        <img src="../assets/images/svg/hamburger-menu.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="bottom-nav min-xl:flex-row hidden min-lg:block border-b-[1px] border-lightgray">
+            <div class="container-fluid-xl max-4xl:px-50 max-xxl:px-40 max-xl:px-[35px] max-large:px-20 max-lg:px-20">
+                <div
+                    class="flex items-center flex-wrap justify-between bottom-wrapper gap-x-[10px] max-xl:justify-center max-5xl:flex-col max-5xl:justify-center">
+                    <nav>
+                        <ul class="flex">
+                            <li><a href="#">Small Group Tours</a></li>
+                            <li><a href="#">Private Tours</a></li>
+                            <li><a href="#">Corporate</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social-icons max-5xl:pb-14">
+                        <a href="#" class="social-link">
+                            <img src="../assets/images/svg/instagram.svg" alt="instagram icon">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="../assets/images/svg/facebook.svg" alt="facebook icon">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="../assets/images/svg/linkedin.svg" alt="linkedin">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <aside class="h-screen sidebar fixed top-0 -right-full bg-white w-full hidden max-large:flex z-[999]">
+        <div class="container-fluid-xl py-20 max-lg:px-20 w-full">
+            <div class="w-full flex justify-end py-20 close-btn">
+                <img src="../assets/images/svg/close.svg" alt="">
+            </div>
+            <nav class="h-full">
+                <ul class="flex h-full flex-col items-center justify-center text-center gap-[6px]">
+                    <li><a href="#">Small Group Tours</a></li>
+                    <li><a href="#">Private Tours</a></li>
+                    <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <main>
+        <section class="faq-sectinon pt-80 pb-75 max-lg:py-50 max-md:py-30 fade-in">
+            <div class="container-fluid-xl">
+                <div class="title title-josefins charcoal text-center uppercase font-700">
+                    <h2>FAQ</h2>
+                </div>
+                <div class="accordions mt-[35px] fade-in">
+                    <div class="flex w-full justify-between max-md:flex-col gap-4">
+                        <div class="flex flex-col w-full">
+                            <div class="accordion-item bg-white">
+                                <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                  <div class="title title-josefins charcoal">
+                                    <h3>Is my payment data safe with you?</h3>
+                                  </div>
+                                  <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                </div>
+                                <div class="accordion-content mt-10 content charcoal content-secondary">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                          
+                            <div class="accordion-item bg-white">
+                                <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                  <div class="title title-josefins charcoal">
+                                    <h3>Does the tour end where it starts?</h3>
+                                  </div>
+                                  <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                </div>
+                                <div class="accordion-content mt-10 content charcoal content-secondary">
+                                  <p>No. The tour meets at the front entrance of the Sears building on Av. Juárez #14, Colonia Centro. It will end at Taquería Gonzalez, on calle Lopez, 100, Colonia Centro. If you need help getting back to your hotel at the end of the tour, your guide will help you find the nearest subway station or an Uber.</p>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item bg-white">
+                                <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                  <div class="title title-josefins charcoal">
+                                    <h3>Is my payment data safe with you?</h3>
+                                  </div>
+                                  <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                </div>
+                                <div class="accordion-content mt-10 content charcoal content-secondary">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-white">
+                                <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                  <div class="title title-josefins charcoal">
+                                    <h3>Will I eat a lot of food?</h3>
+                                  </div>
+                                  <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                </div>
+                                <div class="accordion-content mt-10 content charcoal content-secondary">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-white">
+                                <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                  <div class="title title-josefins charcoal">
+                                    <h3>Do I need to take cash with me?</h3>
+                                  </div>
+                                  <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                </div>
+                                <div class="accordion-content mt-10 content charcoal content-secondary">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-white">
+                                <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                  <div class="title title-josefins charcoal">
+                                    <h3>Is there an ATM on the route?</h3>
+                                  </div>
+                                  <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                </div>
+                                <div class="accordion-content mt-10 content charcoal content-secondary">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-white">
+                                <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                  <div class="title title-josefins charcoal">
+                                    <h3>Will my guide speak English?</h3>
+                                  </div>
+                                  <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                </div>
+                                <div class="accordion-content mt-10 content charcoal content-secondary">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-white">
+                                <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                  <div class="title title-josefins charcoal">
+                                    <h3>Is this market good for souvenir shopping?</h3>
+                                  </div>
+                                  <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                </div>
+                                <div class="accordion-content mt-10 content charcoal content-secondary">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-white">
+                                <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                  <div class="title title-josefins charcoal">
+                                    <h3>Is it safe to walk in this neighborhood at night?</h3>
+                                  </div>
+                                  <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                </div>
+                                <div class="accordion-content mt-10 content charcoal content-secondary">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-white">
+                                <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                  <div class="title title-josefins charcoal">
+                                    <h3>can I do the tour if I am traveling alone?</h3>
+                                  </div>
+                                  <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                </div>
+                                <div class="accordion-content mt-10 content charcoal content-secondary">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="faq-inquiry mt-[25px] max-md:mt-0 pb-100 max-lg:pb-70 max-md:pb-40">
+            <div class="container-fluid-xl">
+                <div class="card inquiry">
+                    <div class="card-body">
+                        <div class="title title-josefins charcoal font-700 text-center">
+                            <h2>Have Questions Or A Tour Inquiry?</h2>
+                        </div>
+                        <div class="content content-secondary charcoal card-description mt-10 max-sm:mt-0 text-center">
+                            <p>We’d love to hear from you!</p>
+                        </div>
+                        <div class="btn-container max-576:flex max-576:justify-center mt-12 max-sm:mt-8">
+                            <a href="#" class="btn btn-small btn-blue">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section py-[57px] bg-skin">
+            <div class="container-fluid-xl">
+                <div
+                    class="test min-xl:px-[72.5px] flex items-center max-xl:flex-col justify-between gap-[60px] max-xl:text-center max-xl:gap-[30px] fade-in">
+                    <div class="flex flex-col">
+                        <div class="title font-josefins charcoal font-700 uppercase leading-40">
+                            <h5>Stay up to date</h5>
+                        </div>
+                        <div class="content charcoal content-secondary mt-12">
+                            <p>Sign up to stay informed on the latest news and exclusive offers.</p>
+                        </div>
+                    </div>
+                    <form class="flex flex-1 max-x:w-full max-992:flex-col max-992:gap-[20px] max-992:w-full max-992:justify-center">
+                        <div class="ctm-input max-992:py-[13px]">
+                            <input type="email" name="" id="" placeholder="Email Address">
+                        </div>
+                        <div class="btn-container cursor-pointer max-992:flex max-992:justify-center">
+                            <button class="btn btn-big btn-pink">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer fade-in">
+        <div class="container-fluid-xl">
+            <div class="footer-preheading flex justify-center text-center gray mb-16 max-md:mb-20">
+                <span>Local food, global flavors.</span>
+            </div>
+            <a href="#" class="footer-expand-logo">
+                <img src="../assets/images/png/Delicious Dish Tours-footer.png" alt="">
+            </a>
+            <div class="footer-links flex justify-center mt-40 max-md:mt-20 max-md:flex-col max-md:items-center">
+                <a href="mailto:info@deliciousdishtours.com">
+                    <div class="w-fit">
+                        <img src="../assets/images/svg/mail-icon.svg" alt="mail icon">
+                    </div>
+                    <span>info@deliciousdishtours.com</span>
+                </a>
+                <a href="tel:+1 310-734-8193">
+                    <div class="w-fit">
+                        <img src="../assets/images/svg/call-icon.svg" alt="call icon">
+                    </div>
+                    <span>+1 310-734-8193</span>
+                </a>
+            </div>
+        </div>
+        <nav class="flex justify-center w-full footer-nav">
+            <div class="container-fluid-xl">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mt-32">
+            <div class="container-fluid-xl">
+                <div class="flex items-center justify-between max-md:flex-col max-md:gap-[10px]">
+                    <div>
+                        <img src="../assets/images/png/footer-logo.png" alt="">
+                    </div>
+                    <div class="copyright-info gray">
+                        <span>© 2024 All Rights Reserved</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-link">
+                            <img src="../assets/images/svg/instagram.svg" alt="instagram icon">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="../assets/images/svg/facebook.svg" alt="facebook icon">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="../assets/images/svg/linkedin.svg" alt="linkedin">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollTrigger.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

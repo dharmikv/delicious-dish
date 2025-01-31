@@ -209,6 +209,12 @@
   .sidebar ul li a {
     @apply font-cormorant uppercase text-charcoal text-18 leading-22 font-[700] tracking-custom-small whitespace-nowrap transition-all duration-300 ease-in-out max-xl:text-16 relative py-14 block;
   }
+  .bottom-nav nav ul li a.active{
+    @apply border-b-[3px] border-b-pink
+  }
+  .bottom-nav nav ul li a.active::before{
+    content: none;
+  }
   .bottom-nav nav ul li a::before,
   .sidebar ul li a::before{
     @apply content-[''] absolute -bottom-[1.5px] left-0 bg-pink h-[3px] opacity-0 w-0 transition-all ease-in-out duration-300
@@ -346,7 +352,7 @@
     @apply relative pt-[102.27%];
   }
   .card-image img {
-    @apply absolute top-0 left-0 w-full h-full;
+    @apply absolute top-0 left-0 w-full h-full object-cover;
   }
   .card-body {
     @apply p-20 bg-white flex flex-col gap-[15px] shadow-box grow;
@@ -516,10 +522,75 @@
     .read-more-toggle {
         @apply block text-blue !font-josefins cursor-pointer mt-6 max-md:flex max-md:justify-center text-18 max-md:text-16 transition-all duration-300 ease-in-out;
     }
-    .read-more-toggle::hover{
-        @apply text-blue/60 transition-all duration-300 ease-in-out
+    .read-more-toggle:hover{
+        @apply text-pink transition-all duration-300 ease-in-out
     }
     .review.expanded p {
         -webkit-line-clamp: unset; 
     }
+
+  /* ======================================================= TOUR LISTING ======================================================= */
+
+    .card.inquiry{
+        @apply col-span-2 max-sm:col-span-1
+    }
+    .card.inquiry .card-body{
+        @apply flex flex-col items-center justify-center w-full h-full max-lg:!py-40
+    }
+    .card.inquiry .card-body .title h2{
+        @apply max-md:!text-22 max-576:!text-20
+    }
+    .card.inquiry .card-body .card-description p{
+        @apply !text-30 !leading-36
+            max-xxl:!text-28 max-xxl:!leading-32
+                max-lg:!text-20 max-lg:!leading-22
+    }
+
+  /* ======================================================= BLOG LISTING ======================================================= */
+
+    .card.card-landscape .card-image{
+        @apply relative !pt-[65.69%]
+      }
+      .card.card-landscape .card-image img{
+        @apply absolute top-0 left-0 w-full h-full object-cover
+      }
+      .card.card-landscape .card-body .card-title{
+        @apply !max-w-[unset]
+      }
+      .card.card-landscape .card-body{
+        @apply !gap-[10px]
+      }
+      .card.card-landscape .card-body .card-description p{
+        @apply !font-600
+      }
+      .author-detail a{
+        @apply text-blue transition-all ease-in-out duration-300
+      }
+      .author-detail a:hover{
+        @apply text-pink transition-all ease-in-out duration-300
+      }
+
+    /* ======================================================= FAQ ======================================================= */
+
+      .accordion-header h3{
+        @apply max-xxxl:!text-28 max-xxxl:!leading-32
+          max-xxl:!text-22 max-xxl:!leading-26
+            max-md:!text-20
+              max-576:!text-18
+      }
+      .accordion-item{
+        @apply !py-30 border-t-1 border-t-semigray
+          max-md:!py-26
+          max-sm:!py-20
+      }
+      .accordion-icon{
+        @apply max-sm:max-w-[20px] max-sm:max-h-[20px]
+      }
+      .accordion-content p{
+        @apply !text-22 !leading-32
+          max-md:!text-16 max-md:!leading-22
+      }
+      .faq-inquiry .card.inquiry .card-body{
+        @apply !py-100 max-lg:!py-70 max-md:!py-40 !px-0 max-xs:!px-10
+      }
 }
