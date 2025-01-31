@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ======================================================= CONTAINER-FLUID ======================================================= */
+
+  .container-fluid-lg {
+    @apply px-100 max-lg:px-50 max-md:px-30 max-sm:px-20;
+  }
+  .container-fluid {
+    @apply px-75 max-lg:px-50 max-md:px-30 max-sm:px-20;
+  }
+  .container-fluid-xl {
+    @apply px-144 max-xxl:px-80 max-xl:px-60 max-large:px-60 max-md:px-30 max-sm:px-20;
+  }
+
+  /* ======================================================= TITLE ======================================================= */
+
+  h1,
+  .h1 {
+    @apply text-50 leading-50
+            max-xxl:text-40 max-xxl:leading-40
+             max-lg:text-38 max-lg:leading-38
+                max-md:text-32 max-md:leading-32
+                    max-sm:text-28 max-sm:leading-28;
+  }
+  h2,
+  .h2 {
+    @apply text-40 leading-40
+        max-xxxl:text-38 max-xxxl:leading-38
+            max-xxl:text-36
+                max-xl:text-32
+                    max-lg:text-30 max-lg:leading-30
+                        max-md:text-28;
+  }
+  h3,
+  .h3 {
+    @apply text-30 leading-36
+            max-lg:text-28 max-lg:leading-32
+                max-sm:text-22 max-sm:leading-28;
+  }
+  h4,
+  .h4 {
+    @apply text-28 leading-38
+            max-xxxl:text-24 max-xxxl:leading-30
+                max-xxl:text-22 max-xxl:leading-26
+                    max-lg:text-20 max-lg:leading-28
+                        max-md:text-18 max-md:leading-24;
+  }
+
+  /* ======================================================= TITLE FONT FAMILY ======================================================= */
+
+  .title-primary h1,
+  .title-primary h2,
+  .title-primary h3,
+  .title-primary h4,
+  .title-primary h5,
+  .title-primary h6 {
+    @apply font-cormorant;
+  }
+
+  .title-secondary h1,
+  .title-secondary h2,
+  .title-secondary h3,
+  .title-secondary h4,
+  .title-secondary h5,
+  .title-secondary h6 {
+    @apply font-varsailles;
+  }
+  .title-josefins h1,
+  .title-josefins h2,
+  .title-josefins h3,
+  .title-josefins h4,
+  .title-josefins h5,
+  .title-josefins h6 {
+    @apply font-josefins;
+  }
+
+  /* ======================================================= COLORS ======================================================= */
+
+  .charcoal {
+    @apply text-charcoal;
+  }
+  .orange {
+    @apply text-orange;
+  }
+  .white {
+    @apply text-white;
+  }
+  .gray {
+    @apply text-gray;
+  }
+  .pink {
+    @apply text-pink;
+  }
+
+  /* ======================================================= CONTENT ======================================================= */
+
+  .content p {
+    @apply mt-10 text-18 leading-28
+            max-md:text-16 max-md:leading-24;
+  }
+  .content p:first-child {
+    @apply mt-0;
+  }
+  .content.big p {
+    @apply !text-36 !leading-48
+                max-xxxl:!text-30 max-xxxl:!leading-36
+                    max-xl:!text-28 max-xl:!leading-34
+                        max-large:!text-26 max-large:!leading-30
+                            max-lg:!text-22 max-lg:!leading-28
+                                max-992:!text-20 max-992:!leading-24
+                                    max-sm:!text-18 max-sm:!leading-22;
+  }
+  .content-primary p {
+    @apply !font-josefins;
+  }
+  .content-secondary p {
+    @apply !font-cormorant;
+  }
+
+  /* ======================================================= CONTENT ======================================================= */
+
+  .top-bar-head span {
+    @apply text-22 uppercase font-varsailles
+            max-xxxl:text-20 max-xxxl:leading-20
+                max-xl:text-18 max-xl:leading-18
+                    max-lg:text-16 max-lg:leading-16
+                        max-md:text-14 max-md:leading-14;
+  }
+}
+
+@layer components {
+  /* ======================================================= BUTTON ======================================================= */
+
+  .btn {
+    @apply py-[13px] px-30 uppercase font-cormorant tracking-custom font-[600] inline-block cursor-pointer max-xs:py-10 max-xs:px-28 flex items-center justify-center text-center;
+  }
+  .btn-small {
+    @apply text-20 leading-20
+            max-lg:text-16 max-lg:leading-16
+                max-xs:text-14;
+  }
+  .btn-big {
+    @apply text-24 leading-24
+            max-xl:text-20 max-xl:leading-20
+            max-lg:text-18 max-lg:leading-18
+                max-sm:text-16 max-sm:leading-16
+                    max-xs:text-14;
+  }
+  .btn-pink {
+    @apply bg-pink text-white border-[1px] border-pink transition-all ease-in-out duration-300;
+  }
+  .btn-pink:hover {
+    @apply bg-white text-pink border-[1px] transition-all ease-in-out duration-300;
+  }
+  .btn-blue {
+    @apply bg-blue text-white border-[1px] border-blue transition-all ease-in-out duration-300;
+  }
+  .btn-blue:hover {
+    @apply bg-white text-blue border-[1px] transition-all ease-in-out duration-300;
+  }
+
+  /* ======================================================= INPUT ======================================================= */
+
+  .ctm-input {
+    @apply w-full h-auto bg-white border-[1px] border-semigray px-20;
+  }
+  .ctm-input input {
+    @apply h-full w-full pl-40 placeholder:font-josefins placeholder:text-charcoal placeholder:text-18 placeholder:max-md:text-16 placeholder:leading-18 placeholder:max-md:leading-16 focus-visible:outline-none;
+  }
+  .ctm-input {
+    @apply relative;
+  }
+  .ctm-input::before {
+    @apply content-[""] absolute top-[50%] left-20 translate-y-[-50%] bg-contain w-full h-full max-w-[24px] max-h-[24px] bg-[url(../../images/svg/mail-icon.svg)] bg-no-repeat;
+  }
+}
+
+@layer utilities {
+  /* ======================================================= HEADER ======================================================= */
+
+  .is-sticky {
+    animation: headerStickyAnimation 0.5s ease-in-out;
+    @apply fixed top-0 left-0 w-full z-50 transition-all duration-500;
+  }
+  @keyframes headerStickyAnimation {
+    0% {
+      opacity: 0.5;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  header.is-sticky {
+    @apply shadow-sm;
+  }
+  .header {
+    @apply bg-white;
+  }
+  header nav .cart span {
+    @apply font-josefins text-16 tracking-custom;
+  }
+  .bottom-nav nav ul li a,
+  .sidebar ul li a {
+    @apply font-cormorant uppercase text-charcoal text-18 leading-22 font-[700] tracking-custom-small whitespace-nowrap transition-all duration-300 ease-in-out max-xl:text-16 relative py-14 block;
+  }
+  .bottom-nav nav ul li a::before,
+  .sidebar ul li a::before{
+    @apply content-[''] absolute -bottom-[1.5px] left-0 bg-pink h-[3px] opacity-0 w-0 transition-all ease-in-out duration-300
+  }
+  .bottom-nav nav ul li a:hover::before,
+  .sidebar ul li a:hover::before{
+    @apply opacity-100 w-full transition-all ease-in-out duration-300
+  }
+  .bottom-nav nav ul li {
+    @apply min-lg:px-[13px] min-xl:px-18 min-xxl:px-24 relative;
+  }
+  .bottom-nav nav ul li::after{
+    @apply content-[''] w-[1px] h-[20px] absolute top-50per translate-y-minus_50 right-0 bg-lightbrown last:content-none
+  }
+  .bottom-nav nav ul li:last-child {
+    @apply !pr-0;
+  }
+  .bottom-nav nav ul li:first-child {
+    @apply !pl-0 border-l-0;
+  }
+  .social-icons {
+    @apply grid gap-[8px] grid-cols-3;
+  }
+  .social-link {
+    @apply p-[7px] bg-blue flex justify-center items-center transition-all ease-in-out duration-300 border-[1px] border-blue;
+  }
+  .social-link:hover {
+    @apply border-[1px] border-blue bg-white transition-all ease-in-out duration-300;
+  }
+  .social-link:hover img {
+    filter: brightness(0) saturate(100%) invert(43%) sepia(9%) saturate(3565%)
+      hue-rotate(170deg) brightness(90%) contrast(81%);
+  }
+
+  /* .sidebar ul li a{
+    @apply text-18 text-charcoal uppercase font-cormorant font-700 tracking-custom-small
+  } */
+
+  /* ======================================================= TOP BAR ======================================================= */
+
+  .top-bar {
+    @apply bg-skin py-10;
+  }
+  .top-bar-links a,
+  .footer-links a {
+    @apply flex gap-[12px];
+  }
+  .top-bar-links a {
+    @apply font-josefins text-charcoal font-500 transition-all duration-300 ease-in-out;
+  }
+  .top-bar-links a:hover span{
+    @apply text-orange transition-all duration-300 ease-in-out;
+  }
+  .top-bar-links a img {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .top-bar-links a:hover img {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(63%) saturate(4570%)
+      hue-rotate(355deg) brightness(96%) contrast(105%);
+      transition: all ease-in-out 300ms;
+  }
+
+  /* ======================================================= FOOTER ======================================================= */
+
+  .footer-links a img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(94%) saturate(1%)
+      hue-rotate(290deg) brightness(116%) contrast(101%);
+  }
+  .footer-links a span {
+    @apply font-josefins text-white font-500;
+  }
+
+  footer .social-icons .social-link {
+    @apply !bg-pink border-1 border-pink;
+  }
+  footer .social-icons .social-link:hover {
+    @apply !bg-white border-1 border-white;
+  }
+  footer .social-icons .social-link:hover img{
+    filter: brightness(0) saturate(100%) invert(22%) sepia(41%) saturate(4438%) hue-rotate(305deg) brightness(95%) contrast(98%);
+  }
+  .social-link img {
+    @apply max-w-[18px];
+  }
+  .hero-section::before {
+    @apply content-[""] absolute top-0 left-0 bg-[#041F1C] w-full h-full pointer-events-none;
+  }
+
+  .hero-section .banner-content .content p {
+    @apply !text-30 !font-[600] leading-36
+            max-lg:!text-26
+                max-md:!text-20
+                    max-sm:!text-16;
+  }
+
+  /* ======================================================= CULTURE SLIDER ======================================================= */
+
+  .cultures {
+    @apply bg-skin;
+  }
+  .culture {
+    @apply flex items-center gap-[20px];
+  }
+  .culture-slider .swiper-slide {
+    @apply transition-all ease-in-out duration-300;
+  }
+  .culture-slider .swiper-slide.swiper-slide-active .culture {
+    @apply flex justify-normal max-md:justify-center;
+  }
+  .culture-slider .swiper-slide.swiper-slide-next .culture {
+    @apply flex justify-center;
+  }
+  .culture-slider .swiper-slide .culture {
+    @apply flex justify-end;
+  }
+  .culture {
+    @apply text-22 leading-22 font-varsailles
+            max-xxxl:text-18 max-xxxl:leading-18
+                max-992:text-16 max-992:leading-16;
+  }
+
+  /* ======================================================= CULTURE SECTION ======================================================= */
+
+  .culture-section .content strong.second {
+    @apply !text-pink;
+  }
+  .card {
+    @apply relative flex flex-col;
+  }
+  .card::before {
+    @apply content-[""] absolute top-[15px] -left-5 w-[calc(100%+5px)] h-[calc(100%-10px)] bg-pink z-[-1];
+  }
+  
+  .card-image {
+    @apply relative pt-[102.27%];
+  }
+  .card-image img {
+    @apply absolute top-0 left-0 w-full h-full;
+  }
+  .card-body {
+    @apply p-20 bg-white flex flex-col gap-[15px] shadow-box grow;
+  }
+  .card-body .card-title {
+    @apply max-w-[391px];
+  }
+  .card-price {
+    @apply absolute left-20 bottom-20 bg-pink p-10 font-josefins text-20 font-[700] leading-20 flex gap-[5px] items-center max-576:text-16;
+  }
+  .card-price img {
+    @apply max-w-[24px] max-h-[24px] !static;
+  }
+  .card-description p {
+    @apply !text-20 !font-[700]
+            max-xxl:!text-18 max-xxl:!leading-18;
+  }
+  .card-info {
+    @apply py-[6.5px] max-xl:py-[4.5px] max-xl:px-8 px-10 border-[1px] border-gray rounded-5 flex gap-[9.5px] items-center w-fit;
+  }
+  .card-info span {
+    @apply text-16 tracking-custom font-josefins font-500 capitalize;
+  }
+
+  /* ======================================================= PRIVATE TOUR SECTION ======================================================= */
+
+  .private-tours-section {
+    @apply relative;
+  }
+  .private-tour-img {
+    @apply relative pt-[55.56%] max-md:h-[350px];
+  }
+  .private-tour-img img {
+    @apply absolute top-0 left-0 w-full h-full max-md:object-cover;
+  }
+  .private-tour-banner {
+    @apply absolute bottom-0 left-0 w-full p-[25px] bg-darkblue/95 max-lg:relative;
+  }
+  .private-tour-banner .title h5 {
+    @apply text-40 leading-60 max-lg:text-center uppercase
+            max-xxxl:text-36 max-xxxl:leading-56
+                max-xxl:text-32 max-xxl:leading-50
+                    max-xl:text-28 max-xl:leading-40
+                        max-lg:text-24 max-lg:leading-36
+                            max-md:text-20 max-md:leading-28;
+  }
+  .private-tour-banner .content p {
+    @apply text-20 leading-30 font-[700] uppercase max-lg:text-center
+            max-xl:text-18 max-xl:leading-28
+                max-lg:text-16;
+  }
+
+  /* ======================================================= TESTIMONIAL SECTION ======================================================= */
+
+  .tesmonial-swiper .swiper-slide {
+    @apply px-[39px] py-10 max-large:px-20;
+  }
+  .testimonial-img {
+    @apply relative pt-[100%] rounded-999;
+  }
+  .testimonial-img::before {
+    @apply content-[""] absolute top-10 left-10 bg-pink rounded-999 w-full h-full;
+  }
+  .testimonial-img img {
+    @apply absolute top-0 left-0 w-full h-full rounded-999;
+  }
+  .testmonial-head {
+    @apply relative pt-72 italic max-w-[450px] line-clamp-1 max-md:max-w-[unset];
+  }
+  .testmonial-head::before {
+    @apply content-[""] absolute top-[39px] left-[50%] bg-[url('../../images/png/quote.png')] bg-contain bg-no-repeat w-[34px] h-[34px] translate-x-[-50%];
+  }
+  .tesmonial-swiper .swiper-slide .content p {
+    @apply !font-300 line-clamp-6;
+  }
+
+  /* ======================================================= WHO WE ARE SECTION ======================================================= */
+
+  .who-we-are-section .content p {
+    @apply text-30 leading-36
+            max-xl:text-18 max-xl:leading-22;
+  }
+
+  /* ======================================================= TRIANGLE SECTION ======================================================= */
+
+  .tringle-pattern {
+    @apply relative;
+  }
+  .tringle-pattern::before {
+    @apply content-[""] absolute bottom-0 left-0 z-10 w-full max-w-[1080px] h-full bg-cover max-lg:hidden;
+    background: linear-gradient(180deg, #004f9a -8.76%, #20b2aa 111.26%);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+  .tringle-pattern::after {
+    @apply content-[""] absolute bottom-0 right-0  w-full max-w-[1080px] h-full bg-cover max-lg:hidden;
+    background: linear-gradient(180deg, #fb5607 -8.76%, #ffbe0b 111.26%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  }
+  .who-we-are-section .zigzag-content p {
+    @apply !text-18 !leading-26;
+  }
+
+  /* ======================================================= CONTACT SECTION ======================================================= */
+
+  .contact-section .title h5 {
+    @apply text-40 leading-40
+        max-xxxl:text-38 max-xxl:leading-38
+                max-xxl:text-36
+                    max-xl:text-32
+                        max-lg:text-30 max-lg:leading-30
+                            max-md:text-28;
+  }
+  /* ======================================================= FOOTER SECTION ======================================================= */
+
+  .footer {
+    @apply pt-[85px] bg-darkblue pb-[15px];
+  }
+  .footer-preheading span {
+    @apply font-varsailles text-22 leading-22 tracking-custom
+            max-lg:text-18 max-lg:leading-18
+                max-sm:text-16 max-sm:leading-16;
+  }
+  .footer-expand-logo {
+    @apply flex justify-center items-center;
+  }
+  .footer-links {
+    @apply max-md:gap-[10px];
+  }
+  .footer-links a {
+    @apply px-50 first:pl-0 last:pr-0 last:border-l-[1px] last:border-l-lightbrown/10 max-md:px-0 last:max-md:border-l-0 transition-all duration-300 ease-out max-md:text-14; 
+  }
+  .footer-links a:hover span{
+    @apply text-pink;
+  }
+  .footer-links a:hover img {
+    filter: brightness(0) saturate(100%) invert(22%) sepia(41%) saturate(4438%) hue-rotate(305deg) brightness(95%) contrast(98%);
+    transition: all 0.3s ease-out;
+}
+  .footer-nav {
+    @apply border-[1px] border-lightbrown/10 border-r-0 border-l-0 py-[19px] mt-[85px] overflow-x-auto;
+  }
+  .footer-nav ul {
+    @apply flex max-large:flex-wrap max-large:gap-x-[30px] max-large:gap-y-[10px]  max-large:justify-center;
+  }
+  .footer-nav ul li {
+    @apply px-30 first:pl-0 last:pr-0 border-l-[1px] border-l-lightbrown/10 first:border-l-0 max-large:border-l-0 max-large:px-0;
+  }
+  .footer-nav ul li a {
+    @apply font-cormorant uppercase text-white text-18 tracking-custom-small whitespace-nowrap transition-all ease-in-out duration-300 max-md:text-14;
+  }
+  .footer-nav ul li a:hover{
+    @apply text-pink transition-all ease-in-out duration-300
+  }
+  .copyright-info span {
+    @apply text-14 tracking-custom font-josefins leading-14 max-md:text-12;
+  }
+    .review p {
+        display: -webkit-box;
+        -webkit-line-clamp: 5; 
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: relative;
+        transition: -webkit-line-clamp 0.3s ease, max-height 0.3s ease; 
+    }
+
+    .read-more-toggle {
+        @apply block text-blue !font-josefins cursor-pointer mt-6 max-md:flex max-md:justify-center text-18 max-md:text-16 transition-all duration-300 ease-in-out;
+    }
+    .read-more-toggle::hover{
+        @apply text-blue/60 transition-all duration-300 ease-in-out
+    }
+    .review.expanded p {
+        -webkit-line-clamp: unset; 
+    }
+}
