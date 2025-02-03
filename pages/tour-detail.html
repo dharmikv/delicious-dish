@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Dish</title>
+    <link rel="stylesheet" href="../assets/css/dist/style.css">
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <header class="sticky top-0 header w-full">
+        <div class="top-bar">
+            <div class="container-fluid-xl">
+                <div class="flex justify-between max-large:justify-center items-center">
+                    <div class="top-bar-head charcoal">
+                        <span>Local food, global flavors.</span>
+                    </div>
+                    <div class="top-bar-links gap-[30px] hidden min-large:flex">
+                        <a href="mailto:info@deliciousdishtours.com">
+                            <div class="w-fit">
+                                <img src="../assets/images/svg/mail-icon.svg" alt="mail icon">
+                            </div>
+                            <span>info@deliciousdishtours.com</span>
+                        </a>
+                        <div class="w-[1px] bg-lightbrown"></div>
+                        <a href="tel:+1 310-734-8193">
+                            <div class="w-fit">
+                                <img src="../assets/images/svg/call-icon.svg" alt="call icon">
+                            </div>
+                            <span>+1 310-734-8193</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="border-b-[1px] border-lightgray">
+            <div class="container-fluid-xl max-4xl:px-50 max-xxl:px-40 max-xl:px-[35px] max-large:px-30 max-lg:px-20">
+                <div class="flex items-center justify-between py-30 max-lg:py-20 gap-[10px]">
+                    <div class="navbar-brand flex-1">
+                        <a href="#" class="max-md:max-w-[100px] max-sm:max-w-[80px] block">
+                            <img src="../assets/images/png/nav-logo-copy.png" alt="Delicious dish">
+                        </a>
+                    </div>
+                    <div class="flex-[2] flex justify-center items-center">
+                        <a href="#">
+                            <img src="../assets/images/png/Delicious Dish Tours.png"
+                                class="max-lg:max-w-[350px] max-sm:max-w-[250px] max-576:max-w-[180px]" alt="">
+                        </a>
+                    </div>
+                    <div class="items-center gap-[15px] min-xl:flex-row hidden min-lg:flex justify-end flex-1">
+                        <a href="#" class="cart flex items-center gap-[7px]">
+                            <div>
+                                <img src="../assets/images/svg/bag.svg" alt="cart icon">
+                            </div>
+                            <span class="charcoal max-xl:hidden">1 item</span>
+                        </a>
+                        <div class="btn-container">
+                            <a href="#" class="btn btn-small btn-pink">Book now</a>
+                        </div>
+                    </div>
+                    <div class="flex min-lg:hidden open-button justify-end flex-1">
+                        <img src="../assets/images/svg/hamburger-menu.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="bottom-nav min-xl:flex-row hidden min-lg:block border-b-[1px] border-lightgray">
+            <div class="container-fluid-xl max-4xl:px-50 max-xxl:px-40 max-xl:px-[35px] max-large:px-20 max-lg:px-20">
+                <div
+                    class="flex items-center flex-wrap justify-between bottom-wrapper gap-x-[10px] max-xl:justify-center max-5xl:flex-col max-5xl:justify-center">
+                    <nav>
+                        <ul class="flex">
+                            <li><a href="#">Small Group Tours</a></li>
+                            <li><a href="#">Private Tours</a></li>
+                            <li><a href="#">Corporate</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social-icons max-5xl:pb-14">
+                        <a href="#" class="social-link">
+                            <img src="../assets/images/svg/instagram.svg" alt="instagram icon">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="../assets/images/svg/facebook.svg" alt="facebook icon">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="../assets/images/svg/linkedin.svg" alt="linkedin">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside class="h-screen sidebar fixed top-0 -right-full bg-white w-full hidden max-large:flex z-[999]">
+        <div class="container-fluid-xl py-20 max-lg:px-20 w-full">
+            <div class="w-full flex justify-end py-20 close-btn">
+                <img src="../assets/images/svg/close.svg" alt="">
+            </div>
+            <nav class="h-full">
+                <ul class="flex h-full flex-col items-center justify-center text-center gap-[6px]">
+                    <li><a href="#">Small Group Tours</a></li>
+                    <li><a href="#">Private Tours</a></li>
+                    <li><a href="#">Corporate</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <main>
+        <section class="grid-image-section py-50 fade-in">
+            <div class="container-fluid-xl">
+                <div class="grid grid-cols-4 max-md:grid-cols-2 gap-[8px] relative">
+                    <div class="col-span-2 row-span-2 max-md:row-span-1 max-md:col-span-1">
+                        <img src="../assets/images/jpg/grid-image-1.jpg" alt="Bowl of soup" class="w-full h-full object-cover">
+                    </div>
+                    <div class="row-span-2 max-md:row-span-1">
+                        <img src="../assets/images/jpg/clock-tower.jpg" alt="Farmers Market Clock Tower" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <img src="../assets/images/jpg/farmers-sign.jpg" alt="Farmers Market Neon Sign" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <img src="../assets/images/jpg/people-eating.jpg" alt="People eating" class="w-full h-full object-cover">
+                    </div>
+                    <div class="btn-container absolute bottom-20 right-20">
+                        <a href="#" class="btn btn-small btn-blue">view gallery</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-section fade-in">
+           <div class="container-fluid-xl">
+                <div class="flex w-full max-992:flex-col-reverse">
+                    <div class="left-side w-9/12 max-992:w-full">
+                       <div class="upper-section">
+                            <div class="title charcoal title-josefins font-700">
+                                <h2>Gourmet Farmers Market & Fairfax Food & Walking Tour</h2>
+                            </div>
+
+                            <div class="tour-info flex items-center gap-[10px] mt-20 flex-wrap">
+                                <div class="card-info pink">
+                                    <img src="../assets/images/svg/clock.svg" alt="">
+                                    <span>Duration: 3 Hours</span>
+                                </div>
+                                <div class="card-info pink">
+                                    <img src="../assets/images/svg/people.svg" alt="">
+                                    <span>Maximum 10 people</span>
+                                </div>
+                            </div>
+
+                            <div class="tour-prescription">
+                                <div class="tour-detail">
+                                    <div class="title title-josefins font-300 uppercase pink">
+                                        <h6>Meeting point</h6>
+                                    </div>
+                                    <div class="mt-[15px] max-sm:mt-12 w-fit flex items-center gap-[16px] max-576:flex-col max-576:items-start">
+                                        <div class="tour-description charcoal">
+                                            <img src="../assets/images/svg/location.svg" alt="">
+                                            <span>7100 Beverly Blvd, Los Angeles, CA 90036</span>
+                                        </div>
+                                        <a href="#" class="anchor-link">View on map</a>
+                                    </div>
+                                </div>
+                                <div class="tour-detail">
+                                    <div class="title title-josefins font-300 uppercase pink">
+                                        <h6>departure time</h6>
+                                    </div>
+                                    <div class="mt-[15px] max-sm:mt-12 w-fit flex items-center gap-[16px]">
+                                        <div class="tour-description charcoal">
+                                            <img src="../assets/images/svg/timer.svg" alt="">
+                                            <span>at 12:00 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-includations flex w-full gap-[100px] items-center max-md:flex-col max-md:gap-[20px] max-md:items-start">
+                                    <div>
+                                        <div class="title title-josefins font-300 uppercase pink">
+                                            <h6>What's included</h6>
+                                        </div>
+                                        <ul class="mt-20 max-sm:mt-12 includation">
+                                            <li>Food tastings and non-alcoholic drinks</li>
+                                            <li>Bottled water</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="title title-josefins font-300 uppercase pink">
+                                            <h6>What's not included</h6>
+                                        </div>
+                                        <ul class="mt-20 max-sm:mt-12 includation">
+                                            <li>Pick up from hotel</li>
+                                            <li>Alcoholic beverages (available for purchase)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="py-40 features-list">
+                                <div class="content content-big content-secondary charcoal">
+                                    <p>Explore the rich tapestry of cultures that have shaped this quintessential LA neighborhood, from its Jewish roots to its modern multicultural identity. Experience the bustling energy of the iconic Original Farmers Market, a beloved Los Angeles landmark since 1934, and discover why it remains a foodie paradise.</p>
+                                    <p>This tour features:</p>
+                                </div>
+                                <ul class="features mt-16">
+                                    <li>7-9 stops at top-rated restaurants and eateries</li>
+                                    <li>Mix of trendy hotspots, hidden gems and local favorites</li>
+                                    <li>Tastings at diverse food stalls and gourmet shops in the Original Farmers Market</li>
+                                    <li>Exploration of Jewish delis, bakeries, and traditional shops along Beverly Blvd and other neighborhood streets</li>
+                                    <li>Insights into the area's transformation and its significance in LA's culinary scene</li>
+                                    <li>Stories of immigrant families who built thriving businesses and shaped local food culture</li>
+                                    <li>Visit to key cultural landmarks, including the famous CBS Television City</li>
+                                    <li>Opportunity to shop for unique local products and gourmet items</li>
+                                </ul>
+                                <div class="content content-big content-secondary charcoal mt-40">
+                                    <p>Perfect for food enthusiasts, history buffs, and anyone looking to experience the authentic flavors of Los Angeles.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-list flex flex-col pb-100 max-lg:pb-70 max-md:pb-40">
+                                <div class="tour-detail-faq-item bg-white">
+                                    <div class="tour-detail-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                        <div class="title title-josefins pink uppercase font-300">
+                                            <h6>Cancellations</h6>
+                                        </div>
+                                        <img src="../assets/images/svg/arrow-up.svg" class="tour-detail-icon" alt="">
+                                    </div>
+                                    <div class="tour-detail-content mt-18 content charcoal content-primary font-300">
+                                        <p>Customers will receive a full refund or credit with 24 hours notice of cancellation. Customers will also receive a full refund or credit in case of operator cancellation due to weather or other unforeseen circumstances. Contact us by phone to cancel or inquire about a cancellation. No-shows will be charged the full price.</p>
+                                    </div>
+                                </div>
+
+                                <div class="tour-detail-faq-item bg-white">
+                                    <div class="tour-detail-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                        <div class="title title-josefins pink uppercase font-300">
+                                            <h6>Good to know</h6>
+                                        </div>
+                                        <img src="../assets/images/svg/arrow-down.svg" class="tour-detail-icon" alt="">
+                                    </div>
+                                    <div class="tour-detail-content mt-18 content charcoal content-primary font-300">
+                                       <ul class="faq-ul-list">
+                                            <li>The tour is conducted rain or shine.</li>
+                                            <li>We like to blend in with the locals. Dress in comfortable clothing, and leave any flashy or expensive clothes and jewelry at home. Note: Mexico City can be chilly in the mornings and warmer in the afternoon, so it’s best to dress in layers.</li>
+                                            <li>This tour includes a lot of food. We recommend arriving hungry, and not eating breakfast beforehand.</li>
+                                            <li>Vegetarians can be accommodated on this tour, but meat and vegetables will be cooked on the same surface.</li>
+                                       </ul>
+                                    </div>
+                                </div>
+
+                                <div class="tour-detail-faq-item bg-white">
+                                    <div class="tour-detail-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                        <div class="title title-josefins pink uppercase font-300">
+                                            <h6>FAQ</h6>
+                                        </div>
+                                        <img src="../assets/images/svg/arrow-down.svg" class="tour-detail-icon" alt="">
+                                    </div>
+                                    <div class="tour-detail-content mt-40 content charcoal content-primary font-300 max-xxl:mt-30 max-992:mt-[25px] max-md:mt-20">
+                                        <div class="accordion-item bg-white">
+                                            <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion1">
+                                              <div class="title title-josefins charcoal font-500">
+                                                <h3>How long is the tour?</h3>
+                                              </div>
+                                              <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                            </div>
+                                            <div class="accordion-content mt-10 content charcoal content-secondary">
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+                                      
+                                        <div class="accordion-item bg-white">
+                                            <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion2">
+                                              <div class="title title-josefins charcoal font-500">
+                                                <h3>Does the tour end where it starts?</h3>
+                                              </div>
+                                              <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                            </div>
+                                            <div class="accordion-content mt-10 content charcoal content-secondary">
+                                              <p>No. The tour meets at the front entrance of the Sears building on Av. Juárez #14, Colonia Centro. It will end at Taquería Gonzalez, on calle Lopez, 100, Colonia Centro. If you need help getting back to your hotel at the end of the tour, your guide will help you find the nearest subway station or an Uber.</p>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="accordion-item bg-white">
+                                            <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion3">
+                                              <div class="title title-josefins charcoal font-500">
+                                                <h3>Will I eat a lot of food?</h3>
+                                              </div>
+                                              <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                            </div>
+                                            <div class="accordion-content mt-10 content charcoal content-secondary">
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+            
+                                        <div class="accordion-item bg-white">
+                                            <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion4">
+                                              <div class="title title-josefins charcoal font-500">
+                                                <h3>Do I need to take cash with me?</h3>
+                                              </div>
+                                              <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                            </div>
+                                            <div class="accordion-content mt-10 content charcoal content-secondary">
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item bg-white">
+                                            <div class="accordion-header flex justify-between items-center rounded-t-[14px] rounded-b-[14px] cursor-pointer transition-all duration-100 gap-[20px]" id="accordion5">
+                                              <div class="title title-josefins charcoal font-500">
+                                                <h3>Is there an ATM on the route?</h3>
+                                              </div>
+                                              <img src="../assets/images/svg/faq-plus.svg" class="accordion-icon" alt="">
+                                            </div>
+                                            <div class="accordion-content mt-10 content charcoal content-secondary">
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="right-side w-3/12 max-992:w-full">
+                        <p></p>
+                    </div>
+                </div>
+           </div>
+        </section>
+
+        <section class="related-section py-100 max-lg:py-70 max-md:py-40 fade-in">
+            <div class="container-fluid-xl">
+                <div class="title title-josefins charcoal text-center uppercase font-700">
+                    <h2>You may also like</h2>
+                </div>
+                <div
+                class="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 mt-[35px] max-lg:mt-30 gap-[53px] max-xs:gap-[40px]">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/images/jpg/card-image-1.jpg" alt="">
+                        <div class="card-price white">
+                            <img src="../assets/images/svg/price-tag.svg" alt="">
+                            <span>$159</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="title charcoal font-josefins card-title">
+                            <h4>Gourmet Hollywood Food & Walking Tour</h4>
+                        </div>
+                        <div class="content content-secondary charcoal card-description">
+                            <p>Perfect for Beach Enthusiasts!</p>
+                        </div>
+                        <div class="flex gap-[10px] max-xl:flex-col">
+                            <div class="card-info gray">
+                                <img src="../assets/images/svg/clock.svg" alt="">
+                                <span>3 Hours</span>
+                            </div>
+                            <div class="card-info gray">
+                                <img src="../assets/images/svg/people.svg" alt="">
+                                <span>Maximum 10 people</span>
+                            </div>
+                        </div>
+                        <div class="btn-container max-576:flex max-576:justify-center mt-auto">
+                            <a href="#" class="btn btn-small btn-blue">check availibilty</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/images/jpg/card-image-2.jpg" alt="">
+                        <div class="card-price white">
+                            <img src="../assets/images/svg/price-tag.svg" alt="">
+                            <span>$159</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="title charcoal font-josefins card-title">
+                            <h4>Gourmet Farmers Market & Fairfax Food & Walking Tour</h4>
+                        </div>
+                        <div class="content content-secondary charcoal card-description">
+                            <p>Perfect for Beach Enthusiasts!</p>
+                        </div>
+                        <div class="flex gap-[10px] max-xl:flex-col">
+                            <div class="card-info gray">
+                                <img src="../assets/images/svg/clock.svg" alt="">
+                                <span>3 Hours</span>
+                            </div>
+                            <div class="card-info gray">
+                                <img src="../assets/images/svg/people.svg" alt="">
+                                <span>Maximum 10 people</span>
+                            </div>
+                        </div>
+                        <div class="btn-container max-576:flex max-576:justify-center mt-auto">
+                            <a href="#" class="btn btn-small btn-blue">check availibilty</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../assets/images/jpg/card-image-3.jpg" alt="">
+                        <div class="card-price white">
+                            <img src="../assets/images/svg/price-tag.svg" alt="">
+                            <span>$159</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="title charcoal font-josefins">
+                            <h4>Gourmet Venice Beach Food & Walking Tour</h4>
+                        </div>
+                        <div class="content content-secondary charcoal card-description">
+                            <p>Perfect for Beach Enthusiasts!</p>
+                        </div>
+                        <div class="flex gap-[10px] max-xl:flex-col">
+                            <div class="card-info gray">
+                                <img src="../assets/images/svg/clock.svg" alt="">
+                                <span>3 Hours</span>
+                            </div>
+                            <div class="card-info gray">
+                                <img src="../assets/images/svg/people.svg" alt="">
+                                <span>Maximum 10 people</span>
+                            </div>
+                        </div>
+                        <div class="btn-container max-576:flex max-576:justify-center mt-auto">
+                            <a href="#" class="btn btn-small btn-blue">check availibilty</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer fade-in">
+        <div class="container-fluid-xl">
+            <div class="footer-preheading flex justify-center text-center gray mb-16 max-md:mb-20">
+                <span>Local food, global flavors.</span>
+            </div>
+            <a href="#" class="footer-expand-logo">
+                <img src="../assets/images/png/Delicious Dish Tours-footer.png" alt="">
+            </a>
+            <div class="footer-links flex justify-center mt-40 max-md:mt-20 max-md:flex-col max-md:items-center">
+                <a href="mailto:info@deliciousdishtours.com">
+                    <div class="w-fit">
+                        <img src="../assets/images/svg/mail-icon.svg" alt="mail icon">
+                    </div>
+                    <span>info@deliciousdishtours.com</span>
+                </a>
+                <a href="tel:+1 310-734-8193">
+                    <div class="w-fit">
+                        <img src="../assets/images/svg/call-icon.svg" alt="call icon">
+                    </div>
+                    <span>+1 310-734-8193</span>
+                </a>
+            </div>
+        </div>
+        <nav class="flex justify-center w-full footer-nav">
+            <div class="container-fluid-xl">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tours</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mt-32">
+            <div class="container-fluid-xl">
+                <div class="flex items-center justify-between max-md:flex-col max-md:gap-[10px]">
+                    <div>
+                        <img src="../assets/images/png/footer-logo.png" alt="">
+                    </div>
+                    <div class="copyright-info gray">
+                        <span>© 2024 All Rights Reserved</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-link">
+                            <img src="../assets/images/svg/instagram.svg" alt="instagram icon">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="../assets/images/svg/facebook.svg" alt="facebook icon">
+                        </a>
+                        <a href="#" class="social-link">
+                            <img src="../assets/images/svg/linkedin.svg" alt="linkedin">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollTrigger.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

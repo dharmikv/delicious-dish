@@ -49,7 +49,11 @@
                     max-lg:text-20 max-lg:leading-28
                         max-md:text-18 max-md:leading-24;
   }
-
+  h6,
+  .h6{
+    @apply text-18 leading-18 tracking-custom
+      max-576:text-16 max-576:leading-16
+  }
   /* ======================================================= TITLE FONT FAMILY ======================================================= */
 
   .title-primary h1,
@@ -99,11 +103,11 @@
   /* ======================================================= CONTENT ======================================================= */
 
   .content p {
-    @apply mt-10 text-18 leading-28
+    @apply mt-20 max-992:mt-12 text-18 leading-28
             max-md:text-16 max-md:leading-24;
   }
   .content p:first-child {
-    @apply mt-0;
+    @apply !mt-0;
   }
   .content.big p {
     @apply !text-36 !leading-48
@@ -151,22 +155,22 @@
                     max-xs:text-14;
   }
   .btn-pink {
-    @apply bg-pink text-white border-[1px] border-pink transition-all ease-in-out duration-300;
+    @apply bg-pink text-white border-1 border-pink transition-all ease-in-out duration-300;
   }
   .btn-pink:hover {
-    @apply bg-white text-pink border-[1px] transition-all ease-in-out duration-300;
+    @apply bg-white text-pink border-1 transition-all ease-in-out duration-300;
   }
   .btn-blue {
-    @apply bg-blue text-white border-[1px] border-blue transition-all ease-in-out duration-300;
+    @apply bg-blue text-white border-1 border-blue transition-all ease-in-out duration-300;
   }
   .btn-blue:hover {
-    @apply bg-white text-blue border-[1px] transition-all ease-in-out duration-300;
+    @apply bg-white text-blue border-1 transition-all ease-in-out duration-300;
   }
 
   /* ======================================================= INPUT ======================================================= */
 
   .ctm-input {
-    @apply w-full h-auto bg-white border-[1px] border-semigray px-20;
+    @apply w-full h-auto bg-white border-1 border-semigray px-20;
   }
   .ctm-input input {
     @apply h-full w-full pl-40 placeholder:font-josefins placeholder:text-charcoal placeholder:text-18 placeholder:max-md:text-16 placeholder:leading-18 placeholder:max-md:leading-16 focus-visible:outline-none;
@@ -177,6 +181,7 @@
   .ctm-input::before {
     @apply content-[""] absolute top-[50%] left-20 translate-y-[-50%] bg-contain w-full h-full max-w-[24px] max-h-[24px] bg-[url(../../images/svg/mail-icon.svg)] bg-no-repeat;
   }
+
 }
 
 @layer utilities {
@@ -239,10 +244,10 @@
     @apply grid gap-[8px] grid-cols-3;
   }
   .social-link {
-    @apply p-[7px] bg-blue flex justify-center items-center transition-all ease-in-out duration-300 border-[1px] border-blue;
+    @apply p-[7px] bg-blue flex justify-center items-center transition-all ease-in-out duration-300 border-1 border-blue;
   }
   .social-link:hover {
-    @apply border-[1px] border-blue bg-white transition-all ease-in-out duration-300;
+    @apply border-1 border-blue bg-white transition-all ease-in-out duration-300;
   }
   .social-link:hover img {
     filter: brightness(0) saturate(100%) invert(43%) sepia(9%) saturate(3565%)
@@ -371,10 +376,10 @@
             max-xxl:!text-18 max-xxl:!leading-18;
   }
   .card-info {
-    @apply py-[6.5px] max-xl:py-[4.5px] max-xl:px-8 px-10 border-[1px] border-gray rounded-5 flex gap-[9.5px] items-center w-fit;
+    @apply py-[6.5px] max-xl:py-[4.5px] max-xl:px-8 px-10 border-1 border-gray rounded-5 flex gap-[9.5px] items-center w-fit;
   }
   .card-info span {
-    @apply text-16 tracking-custom font-josefins font-500 capitalize;
+    @apply text-16 tracking-custom font-josefins font-500 capitalize max-md:text-14;
   }
 
   /* ======================================================= PRIVATE TOUR SECTION ======================================================= */
@@ -482,7 +487,7 @@
     @apply max-md:gap-[10px];
   }
   .footer-links a {
-    @apply px-50 first:pl-0 last:pr-0 last:border-l-[1px] last:border-l-lightbrown/10 max-md:px-0 last:max-md:border-l-0 transition-all duration-300 ease-out max-md:text-14; 
+    @apply px-50 first:pl-0 last:pr-0 last:border-l-1 last:border-l-lightbrown/10 max-md:px-0 last:max-md:border-l-0 transition-all duration-300 ease-out max-md:text-14; 
   }
   .footer-links a:hover span{
     @apply text-pink;
@@ -492,13 +497,13 @@
     transition: all 0.3s ease-out;
 }
   .footer-nav {
-    @apply border-[1px] border-lightbrown/10 border-r-0 border-l-0 py-[19px] mt-[85px] overflow-x-auto;
+    @apply border-1 border-lightbrown/10 border-r-0 border-l-0 py-[19px] mt-[85px] overflow-x-auto;
   }
   .footer-nav ul {
     @apply flex max-large:flex-wrap max-large:gap-x-[30px] max-large:gap-y-[10px]  max-large:justify-center;
   }
   .footer-nav ul li {
-    @apply px-30 first:pl-0 last:pr-0 border-l-[1px] border-l-lightbrown/10 first:border-l-0 max-large:border-l-0 max-large:px-0;
+    @apply px-30 first:pl-0 last:pr-0 border-l-1 border-l-lightbrown/10 first:border-l-0 max-large:border-l-0 max-large:px-0;
   }
   .footer-nav ul li a {
     @apply font-cormorant uppercase text-white text-18 tracking-custom-small whitespace-nowrap transition-all ease-in-out duration-300 max-md:text-14;
@@ -520,7 +525,7 @@
     }
 
     .read-more-toggle {
-        @apply block text-blue !font-josefins cursor-pointer mt-6 max-md:flex max-md:justify-center text-18 max-md:text-16 transition-all duration-300 ease-in-out;
+        @apply block text-blue !font-josefins cursor-pointer mt-6 max-md:flex max-md:justify-center text-18 max-md:text-16 transition-all duration-300 ease-in-out font-300 underline capitalize;
     }
     .read-more-toggle:hover{
         @apply text-pink transition-all duration-300 ease-in-out
@@ -592,5 +597,136 @@
       }
       .faq-inquiry .card.inquiry .card-body{
         @apply !py-100 max-lg:!py-70 max-md:!py-40 !px-0 max-xs:!px-10
+      }
+
+    /* ======================================================= ABOUT ======================================================= */
+
+      .content-big p{
+        @apply !text-22 font-500 !leading-32
+          max-xxxl:!text-20 max-xxxl:!leading-30
+            max-lg:!text-18 max-lg:!leading-28
+              max-md:!text-16 max-md:!leading-24
+      }
+      .zigzag-pattern-image{
+        @apply relative pt-[66.77%]
+      }
+      .zigzag-section-pattern.left .left-side .zigzag-pattern-image::before{
+        @apply content-[""] absolute -top-[49px] -bottom-[5px] -left-20 w-full h-auto object-cover max-992:hidden;
+        background: linear-gradient(180deg, #004F9A -8.76%, #20B2AA 111.26%);
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+      }
+      .zigzag-pattern-image img{
+        @apply absolute top-0 left-0 w-full h-full object-cover
+      }
+      .zigzag-section-pattern.right .left-side{
+        @apply order-2 max-992:order-none
+      }
+      .zigzag-section-pattern.right .left-side .zigzag-pattern-image::before {
+        @apply content-[""] absolute -top-[49px] -bottom-[5px] -right-20 w-full h-auto object-cover max-992:hidden;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        background: linear-gradient(180deg, #FB5607 -8.76%, #FFBE0B 111.26%)
+      }
+      .ourteam-section{
+        @apply border-t-1 border-t-semigray
+      }
+      .our-team-img {
+        @apply relative pt-[100%] rounded-999;
+      }
+      .our-team-img::before {
+        @apply content-[""] absolute top-10 left-10 bg-pink rounded-999 w-full h-full;
+      }
+      .our-team-img img {
+        @apply absolute top-0 left-0 w-full h-full rounded-999;
+      }
+      .image-with-content.left .left-section{
+        @apply pr-80 max-large:pr-60 max-992:pr-0
+      }
+
+    /* ======================================================= TOUR DETAIL ======================================================= */
+
+      .tour-info .card-info{
+        @apply border-1 border-pink
+      }
+      .tour-info .card-info img{
+        filter: brightness(0) saturate(100%) invert(18%) sepia(94%) saturate(3725%) hue-rotate(314deg) brightness(85%) contrast(85%);
+      }
+      .tour-prescription{
+        @apply flex flex-col gap-[30px] mt-30 pb-40 max-576:gap-[20px] max-576:pb-30
+      }
+      .tour-description{
+        @apply flex items-center gap-[16px] max-576:gap-[10px]
+      }
+      .tour-description span{
+        @apply !font-josefins !font-500 text-20 leading-20 tracking-custom
+          max-xxl:text-18 max-xxl:leading-18
+            max-lg:text-16 max-lg:leading-16
+      }
+      .anchor-link{
+        @apply font-josefins text-20 leading-20 text-blue capitalize !font-300 !underline transition-all duration-300 ease-in-out tracking-custom max-xxl:text-18 max-xxl:leading-18 max-lg:text-16 max-lg:leading-16
+      }
+      .anchor-link:hover{
+        @apply text-pink transition-all duration-300 ease-in-out
+      }
+      .tour-prescription ul.includation{
+        @apply list-disc list-inside
+      }
+      .tour-prescription ul.includation li{
+        @apply text-20 font-josefins leading-30 tracking-custom max-xxl:text-18 max-xxl:leading-26 max-lg:text-16 max-lg:leading-22 text-charcoal
+      }
+      ul.features{
+        @apply relative flex flex-col gap-[18px] max-w-[878px]
+      }
+      ul.features::before{
+        @apply content-[""] absolute top-0 left-[18px]  bg-[url("../../images/svg/dashed-line.svg")] bg-cover bg-no-repeat w-[1px] h-full max-md:left-[16px]
+      }
+      ul.features li{
+        @apply relative pl-60 font-cormorant font-700 text-22 leading-32 max-xxl:text-20 max-xxl:leading-28 max-lg:text-18 max-lg:leading-26 max-md:text-16 max-md:leading-26 text-charcoal
+      }
+      ul.features li::before{
+        @apply content-[""] absolute top-50per left-0 translate-y-minus_50 bg-[url("../../images/svg/sppons.svg")] w-[38px] h-[38px] bg-no-repeat bg-contain max-md:w-[34px] max-md:h-[34px]
+      }
+      .features-list{
+        @apply border-t-1 border-semigray
+      }
+      .tour-detail-content p{
+        @apply !text-20 !leading-30 !tracking-custom max-xxl:!text-18 max-xxl:!leading-26 max-md:!text-16 max-md:!leading-24
+      }
+      .tour-detail-faq-item{
+        @apply py-40 border-b-1 border-semigray last:border-b-0 max-xxl:py-30 max-992:py-[25px] max-md:py-20
+      }
+      .tour-detail-faq-item:first-child{
+        @apply border-t-1
+      }
+      ul.faq-ul-list{
+        @apply list-disc list-inside
+      }
+      ul.faq-ul-list li{
+        @apply font-josefins text-20 leading-30 tracking-custom max-xxl:text-18 max-xxl:leading-28 max-md:text-16 max-md:leading-24
+      }
+      .tour-detail-content .accordion-item{
+        @apply max-992:!py-20
+      }
+      .tour-detail-content .accordion-icon{
+        @apply max-992:max-w-[20px]
+      }
+      .tour-detail-content .accordion-item .title h3{
+        @apply max-992:!text-20 max-lg:!text-18 max-md:!text-16
+      }
+      .tour-detail-content .accordion-item .accordion-content{
+        @apply max-992:!mt-10 max-md:!mt-[5px]
+      }
+      .related-section{
+        @apply border-t-1 border-semigray
+      }
+
+    /* ======================================================= BLOG SINGLE ======================================================= */
+      .blog-zigzag-image{
+        @apply relative pt-[66.77%]
+      }
+      .blog-zigzag-image img{
+        @apply absolute top-0 left-0 w-full h-full object-cover
+      }
+      .social-icons-wrapper{
+        @apply border-t-1 border-semigray
       }
 }

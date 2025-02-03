@@ -152,3 +152,30 @@ $(document).ready(function() {
       }
   });
 });
+
+$(document).ready(function() {
+  $(".accordion-list").each(function() {
+      var $accordion = $(this);
+
+      $accordion.find(".tour-detail-faq-item .tour-detail-content").not(':first').hide();
+      $accordion.find(".tour-detail-faq-item .tour-detail-header").first().find('.tour-detail-icon')
+          .attr('src', '../assets/images/svg/arrow-up.svg');
+
+      $accordion.find(".tour-detail-header").click(function() {
+          var $item = $(this).closest('.tour-detail-faq-item');
+          var $content = $item.find(".tour-detail-content");
+          var $icon = $(this).find('.tour-detail-icon');
+
+          $accordion.find(".tour-detail-content").slideUp();
+          $accordion.find(".tour-detail-icon").attr('src', '../assets/images/svg/arrow-down.svg');
+
+          if ($content.is(":visible")) {
+              $content.slideUp();
+              $icon.attr('src', '../assets/images/svg/arrow-down.svg');
+          } else {
+              $content.slideDown();
+              $icon.attr('src', '../assets/images/svg/arrow-up.svg');
+          }
+      });
+  });
+});
